@@ -1,7 +1,30 @@
 aid: robodock
-name: Robodock
-description: Robodock is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/robodock.png
+name: RoboDock
+description: >-
+  RoboDock is an autonomous robotics company (Y Combinator W2026) building the
+  robotics layer that powers autonomous EV and AV depots, starting with charging
+  and inspections. Its robots automate depot operations for electric and
+  autonomous vehicle fleets, handling vision-guided plug insertion with verified
+  connection, automated post-trip vehicle inspection, and closed-loop learning
+  that improves efficiency with each charge event. The company targets live EV
+  and AV depots, ports, and logistics yards where charging and core depot
+  operations are still performed manually multiple times per day across mixed
+  fleets. RoboDock is a hardware and robotics business rather than an API
+  provider; as of this profile it publishes no public developer API, SDK, or
+  technical documentation. Founded by Zinny Weli (CEO, ex-Zipline and Amazon
+  robotics) and Celine Wang (CTO, ex-Plus autonomous systems).
 url: https://raw.githubusercontent.com/api-evangelist/robodock/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Robotics
+- Autonomous Vehicles
+- EV Charging
+- Fleet Automation
+- Depot Operations
+- Logistics Automation
+- Vehicle Inspection
 apis: []
+common:
+- type: DomainSecurity
+  url: security/robodock-domain-security.yml
+- type: Website
+  url: https://www.robodock.tech/
+- type: Support
+  url: https://www.robodock.tech/contact-us
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
